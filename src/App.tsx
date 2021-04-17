@@ -14,7 +14,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          My test web CV site
+          My first web CV site
         </a>
       </header>
     </div>
