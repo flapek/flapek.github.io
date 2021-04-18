@@ -1,4 +1,4 @@
-name: CI/CD
+name: Main workflow - test
 
 on:
   pull_request:
