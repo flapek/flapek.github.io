@@ -1,4 +1,4 @@
-name: Main workflow - test
+name: Main workflow - test and deploy
 
 on:
   pull_request:
