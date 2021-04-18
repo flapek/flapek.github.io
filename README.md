@@ -1,3 +1,9 @@
+| Branch  | status |
+| --- | --- |
+| main | [![CI/CD](https://github.com/flapek/flapek.github.io/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/flapek/flapek.github.io/actions/workflows/main.yml) (https://codecov.io/gh/flapek/flapek.github.io)  |
+| dev | [![CI/CD](https://github.com/flapek/flapek.github.io/actions/workflows/main.yml/badge.svg?branch=dev)](https://github.com/flapek/flapek.github.io/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/flapek/flapek.github.io/branch/dev/graph/badge.svg?token=HLK0NJ69HK)](https://codecov.io/gh/flapek/flapek.github.io)  |
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
