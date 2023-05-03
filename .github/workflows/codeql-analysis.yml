@@ -19,24 +19,24 @@ jobs:
       fail-fast: false
       matrix:
         language: [ 'javascript' ]
-        node-version: [14.x]
+        node-version: [19.x, 18.x]
         
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       
     - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
       
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v1
+      uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
     
     - name: Cache dependencies
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           **/node_modules
@@ -46,7 +46,7 @@ jobs:
       run: npm install
     
     - name: Install
-      uses: github/codeql-action/autobuild@v1
+      uses: github/codeql-action/autobuild@v3
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v1
+      uses: github/codeql-action/analyze@v3
