@@ -30,10 +30,10 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Run the tests and generate coverage report
-        run: npm test -- --coverage
+        run: yarn test -- --coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
       
       - name: Build
-        run: npm run build
+        run: yarn run build
 
       - name: Deploy
         run: |
